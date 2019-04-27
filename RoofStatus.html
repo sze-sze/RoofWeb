@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Roof Status</title>
+    <link rel="stylesheet" href = "customer.css">
+    <link rel="stylesheet" href = "header.css">
+    <link rel="stylesheet" href = "RoofInfo.css">
+    <link rel="stylesheet" href = "Status.css">
+  </head>
+  <body>
+      <div class = "sidebar" id = "customerSidebar" style = "margin-top:95px;">
+        <a href = "Home.html">Home</a><br>
+        <a href = "RoofStatus.html">View Status Of Roof</a><br>
+        <a href = "ReviewPage.html">Write Review</a>
+      </div>
+
+      <div class="header" id="myHeader" style = "margin-top: -19px; margin-right: -5px;">
+        <section id = "main" style = "margin-left: -19px; align:left;" >
+          <button class="openbtn">&#9776; Menu</button>
+          <script>
+            document.getElementById("customerSidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "-5px";
+            document.getElementById("myHeader").style.marginLeft = "-19px";
+          </script>
+        </section>
+      </div>
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
+      <h1 style = "margin-left: 245px;">
+      Roof Status
+      <div id = "myProgress" style = "margin-left: 245px;">
+        <div id = "myBar">
+          <div class = "progress-bar" id = "progressIndicator" style="width:25%">25%</div>
+        </div>
+
+        <script>
+          var elem = document.getElementById("myBar");
+          var width = 1;
+          var id = setInterval(frame, 10);
+          function frame()
+          {
+            if (width >= 100)
+            {
+              clearInterval(id);
+            }
+            else
+            {
+              document.getElementById("progressIndicator").style.marginLeft = 90 + '%';
+              elem.style.width = 20 + '%';
+            }
+          }
+        </script>
+      </div>
+      </h1>
+
+      <script>
+        function openNav()
+        {
+          document.getElementById("customerSidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+          document.getElementById("myHeader").style.marginLeft = "250px";
+        }
+
+        function closeNav()
+        {
+          document.getElementById("customerSidebar").style.width = "0px";
+          document.getElementById("main").style.marginLeft= "-19px";
+          document.getElementById("myHeader").style.marginLeft = "0px";
+        }
+
+
+        window.onscroll = function() {myFunction()};
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction()
+        {
+          if (window.pageYOffset > sticky)
+          {
+            header.classList.add("sticky");
+          }
+          else
+          {
+            header.classList.remove("sticky");
+          }
+        }
+      </script>
+  </body>
+</html>

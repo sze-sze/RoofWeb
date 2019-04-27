@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Customer Page</title>
+    <link rel="stylesheet" href = "customer.css">
+    <link rel="stylesheet" href = "header.css">
+    <link rel="stylesheet" href = "RoofInfo.css">
+  </head>
+  <body>
+      <div class = "sidebar" id = "customerSidebar" style = "margin-top:95px;">
+        <a href = "Home.html">Home</a><br>
+        <a href = "RoofStatus.html">View Status Of Roof</a><br>
+        <a href = "ReviewPage.html">Write Review</a>
+      </div>
+
+      <div class="header" id="myHeader" style = "margin-top: -19px; margin-right: -5px;">
+        <section id = "main" style = "margin-left: -19px; align:left;" >
+          <button class="openbtn">&#9776; Menu</button>
+          <script>
+            document.getElementById("customerSidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "-5px";
+            document.getElementById("myHeader").style.marginLeft = "-19px";
+          </script>
+        </section>
+      </div>
+
+      <div class = "roofInfo" style = "margin-left:250px;">
+        <h1>Roof Info</h1>
+        <table>
+          <tr>
+            <th>Roof Pitch</th>
+            <th>Square Footage</th>
+            <th>Roof Id</th>
+            <th>Claim Number</th>
+            <th>Number Of Vents</th>
+            <th>Age of Roof</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+
+        <h1>Invoice</h1>
+        <table>
+          <tr>
+            <th>Estimate</th>
+            <th>Invoice Id</th>
+            <th>Order Date</th>
+            <th>Insurance Company</th>
+            <th>Payment Method</th>
+            <th>Card Type</th>
+            <th>Claim Number</th>
+            <th>Card Number</th>
+            <th>Card Expiration</th>
+            <th>Card CVV</th>
+            <th>Line Description</th>
+            <th>Material Amount</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+         </table>
+
+        <h1>Customer Tables</h1>
+        <table>
+          <tr>
+            <th>Calim Number</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email Address</th>
+            <th>Acceptance</th>
+            <th>Customer Survey</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+
+      <script>
+        function openNav()
+        {
+          document.getElementById("customerSidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+          document.getElementById("myHeader").style.marginLeft = "250px";
+        }
+
+        function closeNav()
+        {
+          document.getElementById("customerSidebar").style.width = "0px";
+          document.getElementById("main").style.marginLeft= "-19px";
+          document.getElementById("myHeader").style.marginLeft = "0px";
+        }
+
+
+        window.onscroll = function() {myFunction()};
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction()
+        {
+          if (window.pageYOffset > sticky)
+          {
+            header.classList.add("sticky");
+          }
+          else
+          {
+            header.classList.remove("sticky");
+          }
+        }
+      </script>
+  </body>
+</html>

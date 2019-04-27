@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Roof Web Page</title>
+    <link rel="stylesheet" href = "Login.css">
+  </head>
+  <body>
+    <h2>Login Form</h2>
+    <form method = "post">
+      <div class="container">
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" required>
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+
+
+        <button type = "submit" onclick = openSignup()>Signup</button>
+        <button type="submit"><a href="CustomerPage.html" style="color:white; text-decoration:none;">Login</a></button>
+
+        <label>
+          <input type = "checkbox" checked = "checked" name = "remember"> Remember me
+        </label>
+      </div>
+
+      <div class = "container" style = "background-color:#f1f1f1">
+        <button type = "button" class = "cancelbtn">Cancel</button>
+        <span class = "psw">Forgot <a href = "#">password?</a></span>
+      </div>
+    </form>
+
+    <script>
+      function openSignup()
+      {
+        window.location.href = "SignupForm.html";
+      }
+      function openCustomerPage()
+      {
+        window.location.href = "SignupForm.html";
+      }
+    </script>
+  </body>
+</html>
