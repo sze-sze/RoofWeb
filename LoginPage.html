@@ -7,7 +7,7 @@
   </head>
   <body>
     <h2>Login Form</h2>
-    <form method = "post">
+    <form method = "post" action = "CustomerPage.html">
       <div class="container">
         <label for="username"><b>Username</b></label>
         <input type="text" placeholder="Enter Username" name="username" required>
@@ -15,27 +15,22 @@
         <label for="password"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="password" required>
 
-
-        <button type = "submit" onclick = openSignup()>Signup</button>
-        <button type="submit"><a href="CustomerPage.html" style="color:white; text-decoration:none;">Login</a></button>
+        <button type="submit">Login</button>
 
         <label>
           <input type = "checkbox" checked = "checked" name = "remember"> Remember me
         </label>
       </div>
 
+      <button type = "button" class = "cancelbtn">Cancel</button>
+      <span class = "psw">Forgot <a href = "#">password?</a></span>
       <div class = "container" style = "background-color:#f1f1f1">
-        <button type = "button" class = "cancelbtn">Cancel</button>
-        <span class = "psw">Forgot <a href = "#">password?</a></span>
+        <button type = "submit" onclick = openSignup()>Signup</button>
       </div>
     </form>
 
     <script>
       function openSignup()
-      {
-        window.location.href = "SignupForm.html";
-      }
-      function openCustomerPage()
       {
         window.location.href = "SignupForm.html";
       }
