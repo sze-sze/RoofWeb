@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <title>Customer Page</title>
     <link rel="stylesheet" href = "sales.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   </head>
   <body>
-      <div class = "header" id="myHeader">
-          <script>
-            document.getElementById("myHeader").style.marginLeft = "-19px";
-            document.getElementById("myHeader").style.marginTop = "-19px";
-            document.getElementById("myHeader").style.marginRight = "-5px";
-          </script>
+      <div class = "header" id="myHeader" style = "margin-top: -19px; margin-right: -20px; margin-left:-19px;">
+          <img src="logo.png" alt="Done Right Home Improvements" id="logo" height="68" style = "margin-left: 200px;"/>
+           <i class="fa fa-map" style = "margin-left: 680px;"></i>Atlanta, GA 30315</span>
+           <i class="fa fa-envelope"></i>(404) 400-3708</a>
       </div>
+
       <div class = "roofInfo">
         <div class = "submitButton">
           <h1>Edit Roof Info For the Customer <button type = "submit" class="buttonSubmit">Submit</button></h1>
@@ -90,7 +90,6 @@
           </tr>
         </table>
       </div>
-      <button type = "submit">Submit</button>
       <script>
         function openNav()
         {
@@ -105,8 +104,6 @@
           document.getElementById("main").style.marginLeft= "-19px";
           document.getElementById("myHeader").style.marginLeft = "0px";
         }
-
-
         window.onscroll = function() {myFunction()};
         var header = document.getElementById("myHeader");
         var sticky = header.offsetTop;
