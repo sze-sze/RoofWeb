@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)file:///Users/zelalemterefe/Desktop/Databaseclass/Roof/LoginPage.html -->
+<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Roof Web Page</title>
+    <link rel="stylesheet" type="text/css" href="file:///Users/zelalemterefe/Desktop/Databaseclass/Roof/Login.css">
+  </head>
+
+  <body background="file:///Users/zelalemterefe/Desktop/Databaseclass/Roof/homeroof.jpeg" %="">
+    <h2>Login Form</h2>
+
+    <form method="post" action="file:///Users/zelalemterefe/Desktop/Databaseclass/Roof/CustomerPage.html">
+        <div class="container">
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" required="">
+
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required="">
+
+            <label>Choose your role</label>
+            <input type="radio" name="role" value="customer"> <p1>CUSTOMER</p1>
+            <input type="radio" name="role" value="salesRepresntative"> <p1> SALES REPRESNTATIVE</p1><br>
+            <button type="submit">Login</button>
+
+            <label>
+              <input type="checkbox" checked="checked" name="remember" style="color:Black;"> Remember me
+            </label>
+        </div>
+
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="file:///Users/zelalemterefe/Desktop/Databaseclass/Roof/LoginPage.html#">password?</a></span>
+
+        <div class="container">
+            <button type="submit" onclick="openSignup()">Signup</button>
+        </div>
+    </form>
+
+    <script>
+        function openSignup()
+        {
+            window.location.href = "SignupForm.html";
+        }
+    </script>
+  
+
+</body></html>

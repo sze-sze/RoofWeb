@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Roof Web Page</title>
-    <link rel="stylesheet" href = "Login.css">
+    <link rel="stylesheet" type = "text/css" href = "Login.css">
   </head>
 
-  <body>
+  <body background = "homeroof.jpeg"%>
     <h2>Login Form</h2>
 
     <form method = "post" action = "CustomerPage.html">
@@ -17,19 +17,20 @@
             <label for="password"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="password" required>
 
-            <p1>Choose your role</p1> <input type="radio" name="role" value="customer" checked> Customer
-            <input type="radio" name="role" value="salesRepresntative"> Sales Represntative<br>
+            <label>Choose your role</label>
+            <input type="radio" name="role" value="customer"> <p1>CUSTOMER</p1>
+            <input type="radio" name="role" value="salesRepresntative"> <p1> SALES REPRESNTATIVE</p1><br>
             <button type="submit">Login</button>
 
             <label>
-              <input type = "checkbox" checked = "checked" name = "remember"> Remember me
+              <input type = "checkbox" checked = "checked" name = "remember" style = "color:Black;" > Remember me
             </label>
         </div>
 
         <button type = "button" class = "cancelbtn">Cancel</button>
         <span class = "psw">Forgot <a href = "#">password?</a></span>
 
-        <div class = "container" style = "background-color:#f1f1f1">
+        <div class = "container" >
             <button type = "submit" onclick = openSignup()>Signup</button>
         </div>
     </form>
